@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage with Stacked Images</title>
+    <style>
+        /* Center the content vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center; /* Horizontal centering */
+            align-items: center;     /* Vertical centering */
+            height: 100vh;           /* Full viewport height */
+            margin: 0;               /* Remove default margins */
+            background-color: #f0f0f0; /* Optional: Light background for visibility */
+        }
+
+        /* Group for images: stacked vertically and centered within itself */
+        .image-group {
+            display: flex;
+            flex-direction: column;  /* Stack images vertically */
+            align-items: center;     /* Center images horizontally within the group */
+            gap: 20px;               /* Space between images */
+            padding: 20px;           /* Optional: Padding around the group */
+            border: 1px solid #ccc;  /* Optional: Border to visualize the group */
+            border-radius: 8px;      /* Optional: Rounded corners */
+            background-color: white; /* Optional: White background for the group */
+        }
+
+        /* Style for images: responsive sizing */
+        .image-group img {
+            max-width: 300px;        /* Adjust width as needed */
+            height: auto;            /* Maintain aspect ratio */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-group">
+        <img src="logo.png" alt="First Image">
+        <img src="font.png" alt="Second Image">
+    </div>
+</body>
+</html>

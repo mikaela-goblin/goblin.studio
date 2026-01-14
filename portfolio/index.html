@@ -100,6 +100,32 @@
             color: #ffffff;
         }
 
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 32px;
+            color: #ffffff;
+        }
+
+        .illustrations-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .illustration-item {
+            aspect-ratio: 1;
+            overflow: hidden;
+        }
+
+        .illustration-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
         @media (max-width: 600px) {
             .portfolio {
                 padding: 12px;
@@ -113,12 +139,18 @@
                 margin-bottom: 48px;
             }
 
+            .illustrations-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <main class="portfolio">
         <h1 class="page-title">Portfolio</h1>
+
+        <section class="projects-section">
+            <!-- <h2 class="section-title">Projects</h2> -->
 
         <article class="project">
             <a href="assets/Weave.pdf" class="project-link" target="_blank">
@@ -195,6 +227,19 @@
                 <span class="tag tag-yellow">Creative</span>
             </div>
         </article>
+
+        </section>
+
+        <!--
+        <section class="illustrations-section">
+            <h2 class="section-title">Illustrations</h2>
+            <div class="illustrations-grid">
+                <div class="illustration-item">
+                    <img src="assets/illustration1.png" alt="Illustration 1">
+                </div>
+            </div>
+        </section>
+        -->
 
     </main>
 </body>

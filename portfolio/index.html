@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | goblin.studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1b1a;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+        }
+
+        .portfolio {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .project {
+            margin-bottom: 64px;
+        }
+
+        .project:last-child {
+            margin-bottom: 32px;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .project-link:hover .project-title {
+            color: #4E7E3C;
+        }
+
+        .project-pdf {
+            width: 100%;
+            height: 500px;
+            display: block;
+            background-color: #2a2b2a;
+            border: none;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 16px 0 8px 0;
+            color: #ffffff;
+            transition: color 0.2s ease;
+        }
+
+        .project-description {
+            color: #b0b0b0;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1a1b1a;
+        }
+
+        .tag-green {
+            background-color: #4E7E3C;
+            color: #ffffff;
+        }
+
+        .tag-red {
+            background-color: #B74917;
+            color: #ffffff;
+        }
+
+        .tag-yellow {
+            background-color: #ECC35A;
+            color: #1a1b1a;
+        }
+
+        @media (max-width: 600px) {
+            .portfolio {
+                padding: 12px;
+            }
+
+            .project-title {
+                font-size: 1.25rem;
+            }
+
+            .project {
+                margin-bottom: 48px;
+            }
+
+            .project-pdf {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="portfolio">
+
+        <article class="project">
+            <a href="assets/Weave Brand Deck.pdf" class="project-link" target="_blank">
+                <embed src="assets/Weave Brand Deck.pdf" type="application/pdf" class="project-pdf">
+                <h2 class="project-title">Weave</h2>
+            </a>
+            <p class="project-description">A branding update in Affinity and Spline to amplify the original design merging a bold color scheme with the bold light mode and dark mode. Adjusting for mixed reality UI, Spline shows the layering process of the application and interactivity.</p>
+            <div class="project-tags">
+                <span class="tag tag-green">Branding</span>
+                <span class="tag tag-yellow">UI</span>
+                <span class="tag tag-red">Mixed Reality</span>
+            </div>
+        </article>
+
+        <article class="project">
+            <a href="assets/Retallack Brand Deck.pdf" class="project-link" target="_blank">
+                <embed src="assets/Retallack Brand Deck.pdf" type="application/pdf" class="project-pdf">
+                <h2 class="project-title">Retallack</h2>
+            </a>
+            <p class="project-description">A brand design project where the client is requesting a rebrand to bring a modern elevated touch to a quiet mountainside. This project changed from a youthful resort, to a luxury profound experience.</p>
+            <div class="project-tags">
+                <span class="tag tag-red">Branding</span>
+                <span class="tag tag-green">Identity</span>
+            </div>
+        </article>
+
+        <article class="project">
+            <a href="assets/Goblin Studio Brand Deck.pdf" class="project-link" target="_blank">
+                <embed src="assets/Goblin Studio Brand Deck.pdf" type="application/pdf" class="project-pdf">
+                <h2 class="project-title">Goblin Studio</h2>
+            </a>
+            <p class="project-description">A brand design for my studio that is simple, modern, and its own character of creativity. Utilizing "Goblin" as the inspiration, I connected the spur of the "G" as a goblin ear that, when presenting in animation, emerges as an idea.</p>
+            <div class="project-tags">
+                <span class="tag tag-green">Branding</span>
+                <span class="tag tag-yellow">Identity</span>
+                <span class="tag tag-red">Motion</span>
+            </div>
+        </article>
+
+        <article class="project">
+            <a href="assets/Astroweenie Brand Deck.pdf" class="project-link" target="_blank">
+                <embed src="assets/Astroweenie Brand Deck.pdf" type="application/pdf" class="project-pdf">
+                <h2 class="project-title">Astroweenie</h2>
+            </a>
+            <p class="project-description">A product and brand production where a "ghost kitchen" comes to life in a merchandise only nostalgic family fun. I built this as an idea where you can say this elusive kitchen is only for those who can find it!</p>
+            <div class="project-tags">
+                <span class="tag tag-yellow">Branding</span>
+                <span class="tag tag-red">Product</span>
+                <span class="tag tag-green">Merchandise</span>
+            </div>
+        </article>
+
+        <article class="project">
+            <a href="assets/Rock'em Sock'em Pitch Deck.pdf" class="project-link" target="_blank">
+                <embed src="assets/Rock'em Sock'em Pitch Deck.pdf" type="application/pdf" class="project-pdf">
+                <h2 class="project-title">Rock'em Sock'em</h2>
+            </a>
+            <p class="project-description">A mixed reality game that combines a classic game into full length, scaled down, simplified, or complex experience. Let the user customize their avatar, match up online or locally, and rank up in online leaderboards.</p>
+            <div class="project-tags">
+                <span class="tag tag-red">Mixed Reality</span>
+                <span class="tag tag-green">Game Design</span>
+                <span class="tag tag-yellow">Interactive</span>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>
